@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Ma To-Do-List</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -13,9 +14,24 @@
             <h1><em>To-Do-List</em></h1>
         </div>
         <div class="ajoutaffichage">
-            <button class="ajout">Ajouter une note</button>
+            <button onclick="togglePopup()" class="ajout">Ajouter une note</button>
             <button class="affichage">Affichage priorité / Affichage jour</button>
         </div>
+        <section id="popupoverlay">
+        <div class="popupajout">
+            <label>Titre de la note: <input type="text", id="titre", name="Titre de la note", required, maxlength="40"></label><br>
+            <label>Date de début: <input type="date", id="datedebut", name="datedebut", required ></label>
+            <label>Date fin: <input type="date", id="datefin", name="datefin", required ></label><br>
+            <label>Catégorie: <input type="text", id="categorie", name="categorie", required></label>
+            <label>Fait: <input type="button", id="fait", name="fait", required ></label><br>
+            <label>Description de la note:</label> <br> 
+            <textarea id="description", name="description" rows="5",cols="60"></textarea> 
+            <br>
+            <label>Remarques:</label> <br> 
+            <textarea id="remarques", name="remarques" rows="5",cols="60"></textarea> <br>
+            <button class="buttonajout">AJOUTER</button> <button class="buttonannuler">ANNULER</button>
+        </div>
+        </section>
         <section class="affichagenote">
             <div class="note">
                 <p class="titrenote">Titre de la note: Date de début date de fin <br>

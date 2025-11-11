@@ -83,3 +83,55 @@ h1{
     background: linear-gradient(rgb(200, 22, 22),rgb(160, 90, 90));
     
 }
+
+.boutonactif
+{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    background: linear-gradient(rgb(14, 120, 28),rgb(16, 142, 20));
+    
+}
+/* Création du popup */
+
+#popupoverlay{
+    background-color: rgba(0, 0, 0, 0.086);
+    border: 0.1rem solid black;
+    max-width: 26rem;
+    padding-left: 0.2rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    display: none;
+    margin-left: 3.5rem;
+    margin-bottom: 1rem;
+   
+}
+#popupoverlay.open{
+    display: block !important;
+    z-index: 2;
+}
+textarea{
+    width: 25rem;
+}
+.popupajout label input{
+    margin-bottom: 0.5rem;
+}
+.popupajout button{
+    margin-left: 5rem;
+    padding-top: 0.2rem;
+    border-radius: 2rem;
+    
+}
+.buttonajout{
+    background-color: rgba(0, 128, 0, 0.507);
+}
+.buttonannuler{
+    background-color: rgba(165, 42, 42, 0.689);
+}
+
+button:hover{
+    background-color: rgba(96, 183, 175, 0.174);
+
+}
