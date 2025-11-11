@@ -23,7 +23,7 @@ h1{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: auto;
+    margin-bottom: 1rem;
 }
 .ajout{
     width: 130px;
@@ -52,6 +52,7 @@ h1{
     overflow-y: scroll;
     background-color: rgba(255, 255, 255, 0.273);
     border: 0.1rem solid black;
+    
 }
 .note{
     display: flex;
