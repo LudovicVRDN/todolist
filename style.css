@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 html{
-    background: linear-gradient(white,rgb(155, 189, 200) );
+    background: linear-gradient(to bottom right, rgb(5, 32, 76),rgb(97, 15, 148) );
     height: 100%;
+    font-family: 'Comic Neue';
 }
 
 /*Titre "To-Do List"*/
@@ -10,8 +12,8 @@ h1{
     width: 40%;
     border: 3px solid black;
     border-radius: 1.5rem;
-    background: linear-gradient(to bottom right, rgb(24, 58, 74),rgb(186, 227, 223));
-    color: rgb(255, 255, 255);
+    background: linear-gradient(to bottom right, rgb(100, 4, 114),rgb(156, 36, 174));
+    color: rgb(0, 0, 0);
 }
 .titre{
     display: flex;
@@ -27,8 +29,8 @@ h1{
 }
 .ajout{
     width: 130px;
-    height: 20px;
-    background-color: rgb(186, 227, 223);
+    height: 2rem;
+    background-color: rgba(99, 4, 114, 0.751);
     border-radius: 3rem;
     text-align: center;
     border: 0.1rem solid black;
@@ -36,8 +38,8 @@ h1{
 }
 .affichage {
     width: 250px;
-    height: 20px;
-    background-color: rgb(186, 227, 223);
+    height: 2rem;
+    background-color: rgba(99, 4, 114, 0.751);
     border-radius: 3rem;
     text-align: center;
     border: 0.1rem solid black;
@@ -47,22 +49,24 @@ h1{
 
 .affichagenote{
     margin: auto;
-    width: 1400px;
-    height: 600px;
+    width: 850px;
+    height: 500px;
+    border-radius: 1rem;
     overflow-y: scroll;
-    background-color: rgba(255, 255, 255, 0.273);
+    background: linear-gradient(rgba(255, 255, 255, 0.905),rgb(201, 202, 202) );
     border: 0.1rem solid black;
+    margin-bottom: 2rem;
     
 }
 .note{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    
     margin: auto;
     
 }
 .titrenote{
-    background: linear-gradient( rgb(186, 227, 223),white);
+    background:linear-gradient(rgb(199, 199, 198), rgb(255, 252, 252));
     border: 0.1rem solid black;
     border-radius: 1rem;
     margin-top: 1rem;
@@ -70,21 +74,28 @@ h1{
     margin-left: 1rem;
     width: 95%;
     height: 4.5rem;
-    padding-left: 0.5rem;
+    padding-left: 1rem;
    
 }
 /* boutons fait / pas fait */
-.bouton{
-    margin-top: 1rem;
-    margin-left: 1rem;
-    width: 4.5rem;
-    height: 4.5rem;
+.checkboxround{
+    width: 4.3em;
+    height: 4.3em;
+    background-color: white;
     border-radius: 50%;
-    background: linear-gradient(rgb(200, 22, 22),rgb(160, 90, 90));
-    
+    margin-top: -1.9rem;
+    border: 2px solid #02010156;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;  
+    margin-left: 44rem; 
+}
+.checkboxround:checked{
+    background:linear-gradient(rgba(99, 4, 114, 0.751),rgba(133, 85, 141, 0.751));
 }
 
-.boutonactif
+.vert
 {
     margin-top: 1rem;
     margin-left: 1rem;
@@ -99,18 +110,22 @@ h1{
 #popupoverlay{
     background-color: rgba(0, 0, 0, 0.086);
     border: 0.1rem solid black;
-    max-width: 26rem;
+    border-radius: 1rem;
+    width: 26rem;
     padding-left: 0.2rem;
     padding-bottom: 0.5rem;
     padding-top: 0.5rem;
     display: none;
     margin-left: 3.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
    
 }
 #popupoverlay.open{
     display: block !important;
-    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.915);
+    position: absolute;
+    
 }
 textarea{
     width: 25rem;
@@ -131,7 +146,25 @@ textarea{
     background-color: rgba(165, 42, 42, 0.689);
 }
 
-button:hover{
-    background-color: rgba(96, 183, 175, 0.174);
+/*hover sur les boutons affichages et ajout*/
 
+.affichage:hover{
+    background-color: rgba(60, 4, 97, 0.481);
+}
+.ajout:hover{
+    background-color: rgba(60, 4, 97, 0.481);
+}
+/*isolement du block "todolist"*/
+
+#todolist{
+    display:block;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    max-height: 900px;
+    margin: auto;
+    margin-top: 5rem;
+    background: linear-gradient(rgba(255, 255, 255, 0.905),rgb(201, 202, 202) );
+    border: 0.1rem solid black;
+    border-radius: 2rem;
 }
