@@ -60,12 +60,14 @@ h1{
 }
 .note{
     display: flex;
-    flex-direction: row;
-    
-    margin: auto;
+    justify-content: center;
+    display: none;
     
 }
 .titrenote{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     background:linear-gradient(rgb(199, 199, 198), rgb(255, 252, 252));
     border: 0.1rem solid black;
     border-radius: 1rem;
@@ -73,9 +75,26 @@ h1{
     margin-bottom: 0.5rem;
     margin-left: 1rem;
     width: 95%;
-    height: 4.5rem;
+    height: fit-content;
     padding-left: 1rem;
-   
+    padding-top: 0.5rem;
+}
+li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background:linear-gradient(rgb(199, 199, 198), rgb(255, 252, 252));
+    border: 0.1rem solid black;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    width: 95%;
+    height: fit-content;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+}
+.titrenotes{
+    width: 80%;
 }
 /* boutons fait / pas fait */
 .checkboxround{
@@ -83,13 +102,12 @@ h1{
     height: 4.3em;
     background-color: white;
     border-radius: 50%;
-    margin-top: -1.9rem;
     border: 2px solid #02010156;
     appearance: none;
     -webkit-appearance: none;
     outline: none;
     cursor: pointer;  
-    margin-left: 44rem; 
+    
 }
 .checkboxround:checked{
     background:linear-gradient(rgba(99, 4, 114, 0.751),rgba(133, 85, 141, 0.751));
