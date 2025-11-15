@@ -58,27 +58,13 @@ h1{
     margin-bottom: 2rem;
     
 }
-.note{
+#n1 {
     display: flex;
     justify-content: center;
-    display: none;
+    
     
 }
-.titrenote{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background:linear-gradient(rgb(199, 199, 198), rgb(255, 252, 252));
-    border: 0.1rem solid black;
-    border-radius: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-    margin-left: 1rem;
-    width: 95%;
-    height: fit-content;
-    padding-left: 1rem;
-    padding-top: 0.5rem;
-}
+
 li{
     display: flex;
     flex-direction: row;
@@ -94,7 +80,7 @@ li{
     padding-top: 0.5rem;
 }
 .titrenotes{
-    width: 80%;
+    width: 90%;
 }
 /* boutons fait / pas fait */
 .checkboxround{
