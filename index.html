@@ -4,46 +4,42 @@
 <head>
     <meta charset="utf-8">
     <title>Ma To-Do-List</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/648c4c545e.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
 
 </head>
 
-<body>
-    <main>
-        <section id="todolist">
-            <div class="titre">
-                <h1><em>To-Do-List</em></h1>
-            </div>
-            <div class="ajoutaffichage">
-                <button onclick="togglePopup()" class="ajout">Ajouter une note</button>
-                <button class="affichage">Affichage priorité / Affichage jour</button>
-            </div>
-            <section id="popupoverlay">
-                <div class="popupajout">
-                    <label>Titre de la note: <input type="text" , id="titre" , name="Titre de la note" , required,
-                            maxlength="40"></label><br>
-                    <label>Date de début: <input type="date" , id="datededebut" , name="datedebut" , required></label>
-                    <label>Date fin: <input type="date" , id="datefin" , name="datefin" , required></label><br>
-                    <label>Catégorie: <input type="text" , id="categorie" , name="categorie" , required></label>
-                    <label>Fait: <input type="checkbox" , id="fait" , name="fait" , required></label><br>
-                    <label>Description de la note: <br>
-                        <textarea id="description" , name="description" rows="5" ,cols="60"></textarea></label>
-                    <br>
-                    <label>Remarques: <br>
-                        <textarea id="remarques" , name="remarques" rows="5" ,cols="60"></textarea></label> <br>
-                    <button class="buttonajout">AJOUTER</button> <button onclick="removeclass()"
-                        class="buttonannuler">ANNULER</button>
-                </div>
-            </section>
-            <section class="affichagenote">
+<body class="flex flex-col h-screen">
+    <header class="text-center p-5 flex-1">
+        <h1 class="text-3xl">Ma To-Do List</h1>
+    </header>
+    <main class="flex-15 p-5">
+       <section class="shadow-xl border-1 border-gray-200 p-7 rounded-2xl">
+        <h2 class="text-center text-2xl mb-5">Mes To-Do</h2>
+        <ul>
+            <li class="border-1 shadow-xl border-gray-200 p-4 flex justify-between rounded-2xl">
+                <p>
+                Titre: <br>
+                Date : <br>
+                Importance : <br>
+                </p>
+      <label class="flex items-center cursor-pointer gap-3">
+  
+  <input type="checkbox" class="sr-only peer" id="task1">
 
-                <ul id="todo">
-                </ul>
-           
-
-
-            </section>
-        </section>
+  
+  <span>Ta tâche</span>
+</label>
+            </li>
+        </ul>
+       </section>
+       <form>
+        <input type="text"> Categorie
+        <input type="text">
+       </form>
     </main>
-    <script src="script.js" ></script>
+    <footer class="flex-1 text-center">
+        <p>Ludovic Vourdon 18/02/2026(v2)</p>
+    </footer>
 </body>
