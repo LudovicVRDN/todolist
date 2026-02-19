@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    // ✅ VERSION 2026
+    "target": "ES2022",          
+    "lib": ["ES2022", "DOM"],    
+    
+    // ✅ MODULES MODERNES
+    "module": "NodeNext",       
+    "moduleResolution": "NodeNext",
+    
+    // ✅ STRICT MAX
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    
+    // ✅ BROWSER/PROD
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "sourceMap": true,
+    
+    // ✅ BROWSER SUPPORT
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    
+    // ✅ FAST BUILD
+    "skipLibCheck": true,
+    "incremental": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
