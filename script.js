@@ -1,4 +1,4 @@
-//ETAPE 1 : initialisation des variables
+/*//ETAPE 1 : initialisation des variables
 let ajout = document.querySelector(".buttonajout");
 
 //ETAPE 2 : declaration des fonctions
@@ -42,7 +42,7 @@ ajout.onclick = () => {
         2. ajouter la note qu'on vient de créer a la liste
         3. enregistrer dans le localStorage la liste mise a jour
     */
-    json = localStorage.getItem("notes"); //ca marche pas, attention a bien transformer en liste
+ /*   json = localStorage.getItem("notes"); //ca marche pas, attention a bien transformer en liste
 
     if(json == null){
         listeNotes = [];
@@ -62,7 +62,7 @@ function addtoHTLM(){
 
     local.forEach(note => {
         /* test création des notes*/
-        let li = document.createElement("li");
+   /*     let li = document.createElement("li");
 
         li.innerHTML = `Titre de la note : ${note.titre} Date de début : ${note.datededebut}  Date de fin : ${note.datefin} <br>
         Description: <br> ${note.description} <br> Remarques : <br> ${note.remarque} 
@@ -71,7 +71,17 @@ function addtoHTLM(){
         todolist.appendChild(li);
     });
 
-}
+}*/
 
+const boutton = document.querySelector(".darkMode");
+const html = document.querySelector('html');
 
-addtoHTLM();
+boutton.addEventListener('click' ,() => { 
+    html.classList.toggle('dark');
+    if(html.classList.contains('dark')){
+        boutton.innerText = '☀️'
+    }else if (!html.classList.contains('dark')){
+        boutton.innerText ='🌙'
+    }
+})
+

@@ -1,24 +1,26 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" >
 
 <head>
     <meta charset="utf-8">
     <title>Ma To-Do-List</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://kit.fontawesome.com/648c4c545e.js" crossorigin="anonymous"></script>
     <script src="script.js" defer></script>
-
+    <link href="./dist/output.css" rel="stylesheet">
 </head>
 
-<body class="flex flex-col h-screen">
+<body class="flex flex-col h-screen bg-gray-50 dark:bg-gray-950 dark:text-white">
     <header class="text-center p-5 flex-1">
+       
         <h1 class="text-3xl">Ma To-Do List</h1>
     </header>
     <main class="flex-15 p-5">
-       <section class="shadow-xl border-1 border-gray-200 p-7 rounded-2xl">
+         <button class="darkMode mb-5 ml-5 "> 🌙 </button>
+    
+       <section class="dark:shadow-gray-800 shadow-lg border border-gray-200 p-7 rounded-2xl">
         <h2 class="text-center text-2xl mb-5">Mes To-Do</h2>
         <ul>
-            <li class="border-1 shadow-xl border-gray-200 p-4 flex justify-between rounded-2xl">
+            <li class="border shadow-lg border-gray-200 p-4 flex justify-between rounded-2xl dark:shadow-gray-800">
                 <p>
                 Titre: <br>
                 Date : <br>
