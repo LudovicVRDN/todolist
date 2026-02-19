@@ -2,6 +2,7 @@
 module.exports = {
    darkMode: 'class',
   content: ["./src/**/*.{html,js}"],
+  plugins: [require('@tailwindcss/forms')],
   theme: {
     extend: {
       colors: {

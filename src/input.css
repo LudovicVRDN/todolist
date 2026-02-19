@@ -1,3 +1,35 @@
-@import "tailwindcss";
+@import "tailwindcss" ; 
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+
+
+@layer components {
+    /*Style for input Checkbox */
+  input[type="checkbox"].custom-checkbox {
+    appearance: none;
+    width: 25px; 
+    height: 25px;
+    border: 2px solid #d1d5db; 
+    border-radius: 0.5rem;
+    background: white;
+    cursor: pointer;
+    position: relative;
+  }
+  /*Style for checked input*/
+  input[type="checkbox"].custom-checkbox:checked {
+    background: #047123;  
+    border-color: #047123;
+  }
+  
+  input[type="checkbox"].custom-checkbox:checked::after {
+    content: '✓';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+}
