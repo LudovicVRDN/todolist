@@ -5,8 +5,8 @@
     "lib": ["ES2022", "DOM"],    
     
     // ✅ MODULES MODERNES
-    "module": "NodeNext",       
-    "moduleResolution": "NodeNext",
+    "module": "esnext",       
+    "moduleResolution": "bundler",
     
     // ✅ STRICT MAX
     "strict": true,

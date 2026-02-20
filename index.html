@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Ma To-Do-List</title>
     <script src="https://kit.fontawesome.com/648c4c545e.js" crossorigin="anonymous"></script>
-    <script src="script.js" defer></script>
+    <script src="./dist/script.js" defer></script>
     <link href="./dist/output.css" rel="stylesheet">
 </head>
 
@@ -25,68 +25,24 @@
             <h2 class="text-center text-2xl mb-5">Mes To-Do</h2>
 
             <ul class="flex flex-col gap-5">
-                <li class="border shadow-lg border-gray-200 p-4 flex justify-between rounded-2xl dark:shadow-gray-800">
-                    <p>
-                        Titre: <br>
-                        Date : <br>
-                        Importance : <br>
-                    </p>
-                    <div class="flex flex-col items-center cursor-pointer gap-3">
-                    <label  for="taskDone">
-                        <input type="checkbox" class="custom-checkbox" id="taskDone">
-                    </label>
-                    <button> <i class="fa-solid fa-x"></i> </button>
-                    </div>
-                </li>
-                <li class="border shadow-lg border-gray-200 p-4 flex justify-between rounded-2xl dark:shadow-gray-800">
-                    <p>
-                        Titre: <br>
-                        Date : <br>
-                        Importance : <br>
-                    </p>
-                    <label class="flex items-center cursor-pointer gap-3" for="taskDone">
-                        <input type="checkbox" class="custom-checkbox" id="taskDone">
-                    </label>
-                </li>
-
-                <li class="border shadow-lg border-gray-200 p-4 flex justify-between rounded-2xl dark:shadow-gray-800">
-                    <p>
-                        Titre: <br>
-                        Date : <br>
-                        Importance : <br>
-                    </p>
-                    <label class="flex items-center cursor-pointer gap-3" for="taskDone">
-                        <input type="checkbox" class="custom-checkbox" id="taskDone">
-                    </label>
-                </li>
-
-                <li class="border shadow-lg border-gray-200 p-4 flex justify-between rounded-2xl dark:shadow-gray-800">
-                    <p>
-                        Importance : <br>
-                        Titre: <br>
-                        Date :
-
-                    </p>
-                    <label class="flex items-center cursor-pointer gap-3" for="taskDone">
-                        <input type="checkbox" class="custom-checkbox" id="taskDone">
-                    </label>
-                </li>
+             
+              
             </ul>
 
         </section>
 
         <button class="mr-15 border w-35 h-15 text-xl shadow-lg border-gray-400
          bg-gray-300 rounded-4xl  dark:bg-gray-900 dark:border-gray-900 text-md  dark:shadow-gray-800" id="hide">
-         Enregistrer
+         Ouvrir
         </button>
 
         <form class="mb-5 border-2 shadow-lg border-gray-200 bg-gray-200 sm:w-220 lg:w-250 xl:w-330 h-50 rounded-2xl 
-        dark:bg-gray-900 dark:border-gray-900 text-md  dark:shadow-gray-800 p-5 flex justify-between items-center" id="form">
-            <article class="flex flex-col  gap-3">
+        dark:bg-gray-900 dark:border-gray-900 text-md  dark:shadow-gray-800 p-5  justify-between items-center hidden">
+            <div class="flex flex-col  gap-3">
                 <label class="flex flex-col" for="importance">
                     Importance :
                 </label>
-                <select class=" px-5 h-10 border border-gray-400 bg-gray-300 w-80 shadow-lg rounded-3xl  dark:bg-gray-800 dark:border-gray-800 text-md  dark:shadow-gray-700" id="importance">
+                <select class=" px-5 h-10 border border-gray-400 bg-gray-300 w-80 shadow-lg rounded-3xl  dark:bg-gray-800 dark:border-gray-800 text-md  dark:shadow-gray-700" id="importance" required>
                     <option value="">Choisir l'importance</option>
                     <option value="urgent">Urgent</option>
                     <option value="important">Important</option>
@@ -95,16 +51,16 @@
                 <div class="flex gap-20">
                     <label class="flex flex-col" for="title">
                         Titre :<input class="h-10 border border-gray-400 bg-gray-300 w-80 shadow-lg rounded-3xl p-5  dark:bg-gray-800 dark:border-gray-800 text-md  dark:shadow-gray-700"
-                            type="text" id="title">
+                            type="text" id="title" required>
                     </label>
                     <label class="flex flex-col" for="date"> 
                         Date :<input class="h-10 border border-gray-400 bg-gray-300 w-80 shadow-lg rounded-3xl p-5  dark:bg-gray-800 dark:border-gray-800 text-md  dark:shadow-gray-700"
-                            type="text" id="date">
+                            type="date" id="date" required>
                     </label>
                 </div>
-            </article>
+            </div>
             <button
-                class="mr-15 border w-35 h-15 text-xl shadow-lg border-gray-400 bg-gray-300 rounded-4xl  dark:bg-gray-800 dark:border-gray-800 text-md  dark:shadow-gray-700">Enregistrer</button>
+                class="mr-15 border w-35 h-15 text-xl shadow-lg border-gray-400 bg-gray-300 rounded-4xl  dark:bg-gray-800 dark:border-gray-800 text-md  dark:shadow-gray-700" id="validate">Enregistrer</button>
 
 
         </form>

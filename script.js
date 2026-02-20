@@ -73,30 +73,3 @@ function addtoHTLM(){
 
 }*/
 
-const boutton = document.querySelector(".darkMode");
-const html = document.querySelector('html');
-
-boutton.addEventListener('click' ,() => { 
-    html.classList.toggle('dark');
-    if(html.classList.contains('dark')){
-        boutton.innerText = 'Light Mode ☀️'
-    }else if (!html.classList.contains('dark')){
-        boutton.innerText ='Dark Mode 🌙'
-    }
-})
-
-const cacherBouton = document.querySelector('#hide');
-const formulaire = document.querySelector('#form');
-
-cacherBouton.addEventListener('click',() =>{
-    if(formulaire.classList.contains("flex")){
-    formulaire.classList.add('hidden');
-    formulaire.classList.remove('flex');
-    }
-    else{
-    formulaire.classList.add('flex')
-    formulaire.classList.remove('hidden')
-    }
-
-})
-
