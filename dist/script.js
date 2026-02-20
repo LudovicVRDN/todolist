@@ -271,7 +271,4 @@ cacherBouton.addEventListener('click', () => {
 document.addEventListener("DOMContentLoaded", () => {
     taskList.render(todoList);
 });
-/* block(checkbox: HTMLInputElement): void {
-
- }*/ 
 //# sourceMappingURL=script.js.map
