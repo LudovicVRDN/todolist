@@ -31,6 +31,7 @@ Application **To-Do List** en **TypeScript vanilla** (ES6+ modules), implémenta
 **Demo** : localhost:5500 – Modifs TS auto-reload avec `tsc --watch`.
 
 ## 📁 Structure
+```
 todolist/
 ├── dist/                    # Fichiers compilés (généré automatiquement)
 ├── src/
@@ -43,6 +44,7 @@ todolist/
 ├── tsconfig.tsbuildinfo     # Cache de compilation TypeScript (généré)
 ├── package.json
 └── package-lock.json
+```
 
 ## 🛠️ Technologies
 | Frontend | Outils | Build |
