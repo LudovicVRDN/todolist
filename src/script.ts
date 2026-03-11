@@ -314,8 +314,6 @@ todoList.addEventListener('click', (e) => {
     }
 })
 
-
-
 const cacherBouton = document.querySelector('#hide') as HTMLButtonElement;
 cacherBouton.addEventListener('click', () => {
     if (form.classList.contains("flex")) {
