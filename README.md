@@ -53,10 +53,11 @@ todolist/
 | HTML5/CSS3/Tailwind | POO SOLID | localStorage |
 
 ## 🔧 Développement
-
+```
 npm i -D typescript @types/node
 npm run dev # tsc --watch + Live Server
 npm run build # tsc → JS dist/
+```
 
 **Ajouts suggérés** : Priorités enum.
 
