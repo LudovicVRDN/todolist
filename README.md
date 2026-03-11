@@ -1,6 +1,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.4-blue?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://html.spec.whatwg.org/)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://www.w3.org/Style/CSS/)
+[![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![LocalStorage](https://img.shields.io/badge/LocalStorage-Persistence-4B5563?style=for-the-badge)](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
 
 Application **To-Do List** en **TypeScript vanilla** (ES6+ modules), implémentant **POO stricte** (classes `Task` et `TodoManager`, principes SOLID). Persistance localStorage, CRUD complet, responsive CSS/Tailwind, switch Dark Mode Light Mode.
@@ -23,12 +24,13 @@ Application **To-Do List** en **TypeScript vanilla** (ES6+ modules), implémenta
 - ✅ **Validation** : TypeScript strict (titre requis)
 - 📱 **Responsive** : Mobile-first (Flexbox/Grid)
 - 👥 **POO complète** : `class Task`, `Form`, `ToDoList`, `ToDoStorage` + interfaces ITask/IStorage (SOLID)
+- 🌙 **Dark Mode / Light Mode** : L'utilisateur peut choisir le mode qui lui convient le mieux avec un clic sur le bouton correspondant.
 
 ## 🚀 Démarrage
 1. Clone : `git clone https://github.com/LudovicVRDN/todolist.git`
 2. VSCode : Ouvrir dossier > **Live Server** sur `index.html`
 
-**Demo** : localhost:5500 – Modifs TS auto-reload avec `tsc --watch`.
+
 
 ## 📁 Structure
 ```
