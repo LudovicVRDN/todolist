@@ -7,7 +7,7 @@ Application **To-Do List** en **TypeScript vanilla** (ES6+ modules), implémenta
 
 **Auteur** : Ludovic Vourdon - Développeur Full Stack Junior en formation.
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/TON-ID/deploy-status)](https://willowy-frangipane-fc6eb5.netlify.app)
+[![Demo](https://img.shields.io/badge/Demo-Live-green?style=for-the-badge&logo=netlify)](https://willowy-frangipane-fc6eb5.netlify.app)
 
 ## 📋 Sommaire
 - [Fonctionnalités](#fonctionnalités)
